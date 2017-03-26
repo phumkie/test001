@@ -26,6 +26,17 @@
         <h6>Fuck You</h6>
         </div>
 	    
+	<?php
+
+	$f = fopen("something.txt", "r");
+
+	// Read line from the text file and write the contents to the client
+	echo fgets($f); 
+
+	fclose($f);
+
+	?>
+	    
         <FORM>
 <INPUT TYPE="button" onClick="history.go(0)" VALUE="Refresh">
 </FORM>
