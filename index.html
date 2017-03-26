@@ -28,10 +28,12 @@
 	    
 	<?php
 
-	$f = fopen("something.txt", "r");
+	$f = fopen("unitednations.txt", "r");
 
-	// Read line from the text file and write the contents to the client
-	echo fgets($f); 
+	// Read line by line until end of file
+	while(!feof($f)) { 
+	    echo fgets($f) . "<br />";
+	}
 
 	fclose($f);
 
